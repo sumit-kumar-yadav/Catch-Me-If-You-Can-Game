@@ -10,6 +10,17 @@ box.addEventListener("mouseover", function () {
     box.style.left = pos.x + "px";
 });
 
+// For mobile during hosting
+box.addEventListener("mouseup", function () {
+    var boxHeight = this.offsetHeight;  
+    var boxWidth = this.offsetWidth;  
+    // console.log("boxHeight", boxHeight);
+    // console.log("boxWidth", boxWidth);
+    var pos = getNewPosition(boxWidth, boxHeight);
+    box.style.top = pos.y + "px";
+    box.style.left = pos.x + "px";
+});
+
 function getNewPosition(boxWidth, boxHeight) {
     
     // The boxWidth and boxHeight are subtracted so that they would not move out from the right and bottom direction
