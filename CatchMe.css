@@ -1,0 +1,19 @@
+body{
+    background-image: url("896828.jpg");
+    background-color: black;
+}
+
+#box {
+    width: 15vw;
+    height: 15vw;
+    background: linear-gradient(45deg, blue, red);
+    position: absolute;
+    top: 145px;
+    left: 145px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 6vw;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
